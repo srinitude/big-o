@@ -63,8 +63,6 @@ void quick_sort_imp(int *array, int low, int hi, size_t size)
 		quick_sort_imp(array, low, par - 1, size);
 		quick_sort_imp(array, par + 1, hi, size);
 	}
-
-
 }
 
 
@@ -78,7 +76,4 @@ void quick_sort_imp(int *array, int low, int hi, size_t size)
 void quick_sort(int *array, size_t size)
 {
 	quick_sort_imp(array, (size_t)0, size - 1, size);
-
-
 }
-
