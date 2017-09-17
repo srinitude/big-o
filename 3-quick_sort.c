@@ -1,4 +1,5 @@
 #include "sort.h"
+
 /**
  * partition - Lomuto quick sort
  * @array: The array
@@ -42,8 +43,6 @@ int partition(int *array, int low, int hi, size_t size)
 }
 
 
-
-
 /**
  * quick_sort_imp - Lomuto quick sort
  * @array: The array
@@ -64,7 +63,6 @@ void quick_sort_imp(int *array, int low, int hi, size_t size)
 		quick_sort_imp(array, par + 1, hi, size);
 	}
 }
-
 
 /**
  * quick_sort - Lomuto quick sort
